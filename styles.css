@@ -1,0 +1,116 @@
+html {
+	background: rgb(215,215,215);
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Arial", "sans-serif";
+	margin: 0;
+	padding: 0;
+	color: rgb(30,30,30)
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 3rem;
+	color: rgb(0,0,100);
+	/*margin-bottom: 3rem;*/
+}
+
+h1 > span {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: rgb(0,0,100);
+	/*margin-top: 1rem;*/
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 2rem;
+	color: rgb(0,0,50);
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 1.5rem;
+	/*font_wight: 400;*/
+}
+
+/* FLEXBOX */
+
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 4rem;
+}
+
+.margin-top {
+	margin-top: auto;
+}
+
+.margin-bottom {
+	margin-bottom: auto;
+}
+
+/* BUTTONS */
+
+.btn {
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	width: auto;
+	text-align: center;
+	border: 0.3rem solid rgb(0,0,100);
+	margin-top: 1rem; /*auto;*/
+	margin-bottom: auto; /*2rem;*/
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	color: rgb(0,0,100);
+	background-color: white;
+}
+
+.btn:hover {
+	cursor: pointer;
+	box-shadow: 0 1.4rem 1.4rem 0 rgba(100, 100, 100, 0.5);
+	transform: translateY(-0.1rem);
+	transition: transform 150ms;
+}
+
+.no-hover {
+	pointer-events: none;
+}
+
+.btn[disabled]:hover {
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+}
+
+/* INPUT */
+
+.in {
+	width: 70vw;
+	height: 30vh;
+	padding: 1rem;
+	margin: 1rem;
+	box-sizing: border-box;
+	font-size: 1.2rem;
+	background: white;
+	border: 0.3rem solid rgb(0,0,100);
+}
