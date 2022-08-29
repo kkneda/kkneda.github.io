@@ -178,7 +178,7 @@ const TRIALS_DATA_SRC = [
 const TOTAL_TRIALS = TRIALS_DATA_SRC.length; // Number of trials to run.
 const TOTAL_STAGES = 5; // The stages for the trials go from 0 (Learning) to 4 (Explanation).
 const CANVAS_ERROR_MSG = "Your browser does not support canvas elements."
-const CANVAS_TEXT_FONT = "22px Arial"; // 2.5rem
+const CANVAS_TEXT_FONT = "22px Arial"; // 22px
 const ALPHABET = [ // Array of unicode characters (suffix '\uFE0E' avoids "emojification").
 	'B',
 	'5',
@@ -374,7 +374,8 @@ function startExplanation() {
 	let headers_text = [
 		"Trial " + (TRIAL+1).toString(),
 		"Stage " + (STAGE+1).toString() + ": Explanation",
-		"PLACEHOLDER FOR EXPLANATION EXPLANATION."
+		"Explain, in your own words, the criteria you have used to determine wether a box " + 
+		"belongs to the trials' category."
 	];
 	showElements(headers, headers_text);
 	
@@ -394,7 +395,9 @@ function startGeneralization() {
 	let headers_text = [
 		"Trial " + (TRIAL+1).toString(),
 		"Stage " + (STAGE+1).toString() + ": Generalization",
-		"PLACEHOLDER FOR GENERALIZATION EXPLANATION."
+		"Select all boxes that you think belong to the trials' category. Click on a box to " + 
+		"toggle its border between solid red (to indicate that the box is not in the category) " + 
+		"and dashed green (to indicate that the box is in the category)."
 	];
 	showElements(headers, headers_text);
 	
@@ -444,7 +447,10 @@ function startFeedback() {
 	let headers_text = [
 		"Trial " + (TRIAL+1).toString(),
 		"Stage " + (STAGE+1).toString() + ": Feedback",
-		"PLACEHOLDER FOR FEEDBACK EXPLANATION."
+		"Your have made one or more mistakes in your selection. Use the boxes below to assess " + 
+		"your errors, considering that the style of a box's border indicates whether the box " + 
+		"belongs to your selection (dashed) or not (solid), while the color indicates whether " + 
+		"the box belongs to the trials' category (green) or not (red)."
 	];
 	showElements(headers, headers_text);
 	
@@ -476,7 +482,9 @@ function startTraining() {
 	let headers_text = [
 		"Trial " + (TRIAL+1).toString(),
 		"Stage " + (STAGE+1).toString() + ": Training",
-		"PLACEHOLDER FOR TRAINING EXPLANATION."
+		"Select all boxes that you think belong to the trials' category. Click on a box to " + 
+		"toggle its border between solid red (to indicate that the box is not in the trials' " + 
+		"category) and dashed green (to indicate that the box is in the trials' category)."
 	];
 	showElements(headers, headers_text);
 	
@@ -520,7 +528,9 @@ function startLearning() {
 	let headers_text = [
 		"Trial " + (TRIAL+1).toString(),
 		"Stage " + (STAGE+1).toString() + ": Learning",
-		"PLACEHOLDER FOR LEARNING EXPLANATION."
+		"Boxes with a solid green border belong to the trials' category, while boxes with a " + 
+		"solid red border do not. Find criteria that determine whether a box belongs to the " + 
+		"trials' category."
 	];
 	showElements(headers, headers_text);
 	

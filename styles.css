@@ -42,7 +42,7 @@ h3 {
 
 h4 {
 	font-size: 1.5rem;
-	/*font_wight: 400;*/
+	font-weight: normal;
 }
 
 /* FLEXBOX */
@@ -52,8 +52,15 @@ h4 {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	/*
 	margin: auto;
 	padding: 4rem;
+	*/
+	margin: auto;
+	padding-top: 1rem; /*auto;*/
+	padding-bottom: 1rem; /*2rem;*/
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .margin-top {
