@@ -383,6 +383,8 @@ function startExplanation() {
 	const elem_stage = document.querySelector("#stage");
 	let new_textarea =  document.createElement("textarea");
 	new_textarea.classList.add("in");
+	new_textarea.classList.add("placeholder");
+	new_textarea.setAttribute("placeholder","Enter your explanation here.");
 	elem_stage.appendChild(new_textarea);
 	
 	// The button for the main container is updated and revealed:
