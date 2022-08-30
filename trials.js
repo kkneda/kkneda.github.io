@@ -374,7 +374,7 @@ function startExplanation() {
 	let headers_text = [
 		"Trial " + (TRIAL+1).toString(),
 		"Stage " + (STAGE+1).toString() + ": Explanation",
-		"Explain, in your own words, the criteria you have used to determine wether a box " + 
+		"Explain, in your own words, the criteria you have used to determine whether a box " + 
 		"belongs to the trials' category."
 	];
 	showElements(headers, headers_text);
